@@ -29,6 +29,7 @@ void task_gps(void *pvParameter)
     uart_event_t event;
     size_t buffered_size;
     char *data = NULL;
+    uint64_t timePrev = 0;
 
     // Configurar UART
     uart_config_t uart_config = {
@@ -67,11 +68,50 @@ void task_gps(void *pvParameter)
         return;
     }
 
-    ESP_LOGI(TAG, "Entrando no LOOP principal");
+    ESP_LOGI(TAG, "Desabilitando mudança automatica de antena");
+    gps_send_command(&data_gps_config, "$PMTK301,0*2C\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Mudança automatica de antena desabilitada");
+    
+    ESP_LOGI(TAG, "Forçando o uso da antena interna");
+    gps_send_command(&data_gps_config, "$PMTK301,0*2C\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Antena interna forçada");
+
+    ESP_LOGI(TAG, "Reiniciando módulo GPS");
+    gps_send_command(&data_gps_config, "$PMTK101*32\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Módulo GPS reiniciado");
+    vTaskDelay(1000/portTICK_PERIOD_MS);
+
+    ESP_LOGI(TAG, "Configurando a taxa de fixação");
+    gps_send_command(&data_gps_config, "$PMTK300,1000,0,0,0,0*1C\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Taxa de fixação configurada");
+    vTaskDelay(250/portTICK_PERIOD_MS);
+
+    ESP_LOGI(TAG, "Habilitando o 1PPS");
+    gps_send_command(&data_gps_config, "$PMTK255,1*2D\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "1PPS habilitado");
+
+    ESP_LOGI(TAG, "Habilitando a busca por GPS e GLONASS");
     gps_send_command(&data_gps_config, "$PMTK353,1,1,0*36\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Busca por GPS e GLONASS habilitada");
+    vTaskDelay(250/portTICK_PERIOD_MS);
+    ESP_LOGI(TAG, "Configurando para todas as mensagens relevantes");
+    gps_send_command(&data_gps_config, "$PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*28\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "Configuração para todas as mensagens relevantes concluída");
+    vTaskDelay(250/portTICK_PERIOD_MS);
+    ESP_LOGI(TAG, "Habilitando SBAS");
+    gps_send_command(&data_gps_config, "$PMTK313,1*2E\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+    ESP_LOGI(TAG, "SBAS habilitado");
+    vTaskDelay(1000/portTICK_PERIOD_MS);
+    
 
     while (1) {
         // Esperar por dados
+        if(xTaskGetTickCount() - timePrev > 10000)
+        {
+            gps_send_command(&data_gps_config, "$PMTK605*31\r\n", (char*)uart_buffer, UART_BUF_SIZE);
+            timePrev = xTaskGetTickCount();
+        }
+
         int length = uart_read_bytes(UART_NUM, uart_buffer, UART_BUF_SIZE, 20 / portTICK_PERIOD_MS);
         if (length > 0) {
             // Realocar memória para armazenar os dados recebidos
