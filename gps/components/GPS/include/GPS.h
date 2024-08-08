@@ -12,6 +12,7 @@ typedef struct
     uint8_t gps_rst;
     uint8_t gps_en;
     uint8_t gps_pps;
+    uint8_t gps_baudrate;
 }data_gps_config_t;
 
 typedef struct {
@@ -30,7 +31,7 @@ typedef struct {
     uint8_t satelite;
 }data_gps_t;
 
-void gps_time(const char *data_nmea, data_gps_t *data_gps);
+void gps_time(const char *data_nmea, data_gps_t *data_gps, int8_t fuso);
 void gps_latitude(const char *data_nmea, data_gps_t *data_gps);
 int gps_send_command(data_gps_config_t *gps_config, const char *command, char *response, int response_len);
 int check_gps_functionality(data_gps_config_t *gps_config);
