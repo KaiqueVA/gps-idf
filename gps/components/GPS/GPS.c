@@ -6,9 +6,7 @@
 
 #define TAG "GPS"
 
-const char *PMTK_TEST_COMMAND = "$PMTK000*32\r\n";
-
-
+const char *PMTK_TEST_COMMAND = "$PMTK605*31\r\n";
 
 void aloca_char(char **data, uint16_t *len)
 {
@@ -20,29 +18,40 @@ void aloca_char(char **data, uint16_t *len)
     }
 }
 
-void gps_time(const char *data_nmea, data_gps_t *data_gps)
+void gps_time(const char *data_nmea, data_gps_t *data_gps, int8_t fuso)
 {
     uint16_t len;
-    const char *time_ptr;
+    const char *time_ptr = NULL;
 
-    if(strncmp(data_nmea, "$GPGGA", 6) != 0)
+    if (strncmp(data_nmea, "$GPGGA", 6) == 0) {
+        time_ptr = strchr(data_nmea, ',') + 1;
+    } else if (strncmp(data_nmea, "$GPRMC", 6) == 0) {
+        time_ptr = strchr(data_nmea, ',') + 1;
+    } else if (strncmp(data_nmea, "$GPGLL", 6) == 0) {
+        time_ptr = strrchr(data_nmea, ',') - 9; // Time is towards the end
+    }
+
+    if (time_ptr == NULL) {
+        ESP_LOGI(TAG, "No valid time found in NMEA sentence");
         return;
+    }
 
-    time_ptr = strchr(data_nmea, ',') + 1;
-    
-    if(data_gps->time != NULL)
+    if (data_gps->time != NULL) {
         free(data_gps->time);
-
-    data_gps->hour = (time_ptr[0] - '0') * 10 + (time_ptr[1] - '0');
+    }
+    if(fuso > 0)
+        data_gps->hour = (time_ptr[0] - '0') * 10 + (time_ptr[1] - '0') + fuso;
+    else if(fuso < 0)
+        data_gps->hour = (time_ptr[0] - '0') * 10 + (time_ptr[1] - '0') - (-fuso);
+    else
+        data_gps->hour = (time_ptr[0] - '0') * 10 + (time_ptr[1] - '0');
     data_gps->minute = (time_ptr[2] - '0') * 10 + (time_ptr[3] - '0');
     data_gps->second = (time_ptr[4] - '0') * 10 + (time_ptr[5] - '0');
 
     len = snprintf(NULL, 0, "%02d:%02d:%02d", data_gps->hour, data_gps->minute, data_gps->second) + 1;
     aloca_char(&data_gps->time, &len);
     snprintf(data_gps->time, len, "%02d:%02d:%02d", data_gps->hour, data_gps->minute, data_gps->second);
-    
 }
-
 
 void gps_latitude(const char *data_nmea, data_gps_t *data_gps)
 {
@@ -67,9 +76,7 @@ void gps_latitude(const char *data_nmea, data_gps_t *data_gps)
     data_gps->latitude_direction = (lat_dir_ptr[0] == 'N') ? 1 : -1;
 
     data_gps->latitude *= data_gps->latitude_direction;
-    
 }
-
 
 int gps_send_command(data_gps_config_t *gps_config, const char *command, char *response, int response_len) {
     ESP_LOGI(TAG, "Sending command: %s", command);
@@ -102,4 +109,3 @@ int check_gps_functionality(data_gps_config_t *gps_config) {
     ESP_LOGI(TAG, "GPS module is not working");
     return -1;
 }
-
