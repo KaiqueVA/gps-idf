@@ -1,0 +1,3788 @@
+OT)
+configsR[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            �ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (30) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     gps[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (306) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (327) app_start: Starting scheduler on CPU0[0m
+[0;32mI (331) app_start: Starting scheduler on CPU1[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) GPS: Iniciando configuração da UART[0m
+[0;32mI (341) GPS: Configuração da UART concluída[0m
+[0;32mI (351) GPS: Entrando no LOOP principal[0m
+[0;32mI (351) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (361) main_task: Returned from app_main()[0m
+[0;32mI (1361) GPS: No response received[0m
+[0;32mI (1361) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2361) GPS: No response received[0m
+[0;32mI (2361) GPS: Response: [0m
+[0;32mI (2461) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3461) GPS: No response received[0m
+[0;32mI (3461) GPS: Response: [0m
+[0;32mI (3561) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4561) GPS: No response received[0m
+[0;32mI (4561) GPS: Response: [0m
+[0;32mI (4661) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5661) GPS: No response received[0m
+[0;32mI (5661) GPS: Response: [0m
+[0;32mI (5761) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6761) GPS: No response received[0m
+[0;32mI (6761) GPS: Response: [0m
+[0;32mI (6861) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7861) GPS: No response received[0m
+[0;32mI (7861) GPS: Response: [0m
+[0;32mI (7961) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8961) GPS: No response received[0m
+[0;32mI (8961) GPS: Response: [0m
+[0;32mI (9061) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10061) GPS: No response received[0m
+[0;32mI (10061) GPS: Response: [0m
+[0;32mI (10161) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11161) GPS: No response received[0m
+[0;32mI (11161) GPS: Response: [0m
+[0;32mI (11261) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12261) GPS: No response received[0m
+[0;32mI (12261) GPS: Response: [0m
+[0;32mI (12361) GPS: GPS module is not working[0m
+[0;31mE (12361) GPS: GPS module is not working[0m
+[0;31mE (12361) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: No response received[0m
+[0;32mI (4562) GPS: Response: [0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5662) GPS: No response received[0m
+[0;32mI (5662) GPS: Response: [0m
+[0;32mI (5762) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6762) GPS: No response received[0m
+[0;32mI (6762) GPS: Response: [0m
+[0;32mI (6862) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7862) GPS: No response received[0m
+[0;32mI (7862) GPS: Response: [0m
+[0;32mI (7962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (8962) GPS: No response received[0m
+[0;32mI (8962) GPS: Response: [0m
+[0;32mI (9062) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (10062) GPS: No response received[0m
+[0;32mI (10062) GPS: Response: [0m
+[0;32mI (10162) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (11162) GPS: No response received[0m
+[0;32mI (11162) GPS: Response: [0m
+[0;32mI (11262) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (12262) GPS: No response received[0m
+[0;32mI (12262) GPS: Response: [0m
+[0;32mI (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) GPS: GPS module is not working[0m
+[0;31mE (12362) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (1362) GPS: No response received[0m
+[0;32mI (1362) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (2362) GPS: No response received[0m
+[0;32mI (2362) GPS: Response: [0m
+[0;32mI (2462) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3462) GPS: No response received[0m
+[0;32mI (3462) GPS: Response: [0m
+[0;32mI (3562) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4672) GPS: Response: $GPRMC,014317.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014317.099,,,,,0,0,,,M,,M,,*48
+[0m
+[0;32mI (4672) GPS: Response: $GPRMC,014317.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014317.099,,,,,0,0,,,M,,M,,*48
+[0m
+[0;32mI (4792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4792) GPS: Response: $GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014317.099,V[0m
+[0;32mI (4792) GPS: Response: $GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014317.099,V[0m
+[0;32mI (4912) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5542) GPS: Response: ,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014318.099,V,,,,,0.00,0.00,060180,,,N,V*37
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*3[0m
+[0;32mI (5552) GPS: Response: ,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014318.099,V,,,,,0.00,0.00,060180,,,N,V*37
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*3[0m
+[0;32mI (5662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5672) GPS: Response: 2
+$GPGGA,014318.099,,,,,0,0,,,M,,M,,*47
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$[0m
+[0;32mI (5672) GPS: Response: 2
+$GPGGA,014318.099,,,,,0,0,,,M,,M,,*47
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$[0m
+[0;32mI (5792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6542) GPS: Response: GLGSV,1,1,00,1*78
+$GPGLL,,,,,014318.099,V,N*75
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014319.099,V,,,,,0.00,0.00,060180,,,[0m
+[0;32mI (6552) GPS: Response: GLGSV,1,1,00,1*78
+$GPGLL,,,,,014318.099,V,N*75
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014319.099,V,,,,,0.00,0.00,060180,,,[0m
+[0;32mI (6662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6672) GPS: Response: N,V*36
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014319.099,,,,,0,0,,,M,,M,,*46
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,[0m
+[0;32mI (6672) GPS: Response: N,V*36
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014319.099,,,,,0,0,,,M,,M,,*46
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,[0m
+[0;32mI (6792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7542) GPS: Response: ,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014319.099,V,N*74
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$[0m
+[0;32mI (7552) GPS: Response: ,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014319.099,V,N*74
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$[0m
+[0;32mI (7662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7672) GPS: Response: GPRMC,014320.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014320.099,,,,,0,0,,,M,,M,,*4C
+$[0m
+[0;32mI (7672) GPS: Response: GPRMC,014320.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014320.099,,,,,0,0,,,M,,M,,*4C
+$[0m
+[0;32mI (7792) GPS: GPS module is not working[0m
+[0;31mE (7792) GPS: GPS module is not working[0m
+[0;31mE (7792) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3722) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014321.099,V,,,,,0.00,0.00,060180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014321.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014321.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014322.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014322.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014322.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014323.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014323.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014323.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014324.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3842) GPS: Response: ,K,N*32
+$GPGGA,014324.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3842) GPS: Response: ,K,N*32
+$GPGGA,014324.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4722) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014324.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4722) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014324.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4832) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4842) GPS: Response: RMC,014325.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014325.099,,,,,0,0,,,M,,M,,*49
+$GP[0m
+[0;32mI (4842) GPS: Response: RMC,014325.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014325.099,,,,,0,0,,,M,,M,,*49
+$GP[0m
+[0;32mI (4962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4962) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014325.099,V,N*[0m
+[0;32mI (4962) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014325.099,V,N*[0m
+[0;32mI (5082) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5722) GPS: Response: 7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014326.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5722) GPS: Response: 7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014326.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5832) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5842) GPS: Response: 180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014326.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5842) GPS: Response: 180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014326.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5962) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014326.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5962) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014326.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (6082) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6722) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014327.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6722) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014327.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6832) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6842) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014327.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6842) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014327.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6962) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (7002) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014327.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (7012) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014327.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (7122) GPS: GPS module is not working[0m
+[0;31mE (7122) GPS: GPS module is not working[0m
+[0;31mE (7122) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014328.099,V,,,,,0.00,0.00,060180,,,N,V*34
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014328.099,,,,,0,0,,,M,,M,,*44
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014328.099,V,N*76
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014329.099,V,,,,,0.00,0.00,060180,,,N,V*35
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014329.099,,,,,0,0,,,M,,M,,*45
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014329.099,V,N*77
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014330.099,V,,,,,0.00,0.00,060180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014330.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014330.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014331.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3642) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3682) GPS: Response: ,K,N*32
+$GPGGA,014331.099,,,,,0,0,,,M,,M,,*4C
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014331.099,,,,,0,0,,,M,,M,,*4C
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014331.099,V,N*7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014331.099,V,N*7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4682) GPS: Response: RMC,014332.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014332.099,,,,,0,0,,,M,,M,,*4F
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014332.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014332.099,,,,,0,0,,,M,,M,,*4F
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014332.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014332.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014333.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5562) GPS: Response: 7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014333.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5682) GPS: Response: 180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014333.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014333.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014333.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014333.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014334.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014334.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6682) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014334.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014334.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6842) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014334.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014334.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014335.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014335.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014335.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014336.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014336.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014336.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014337.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014337.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014337.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014338.099,V,,,,,0.00,0.00,060180,,,N,V*35
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3642) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3682) GPS: Response: ,K,N*32
+$GPGGA,014338.099,,,,,0,0,,,M,,M,,*45
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014338.099,,,,,0,0,,,M,,M,,*45
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014338.099,V,N*77
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014338.099,V,N*77
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4682) GPS: Response: RMC,014339.099,V,,,,,0.00,0.00,060180,,,N,V*34
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014339.099,,,,,0,0,,,M,,M,,*44
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014339.099,V,,,,,0.00,0.00,060180,,,N,V*34
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014339.099,,,,,0,0,,,M,,M,,*44
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014339.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014339.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 76
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014340.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5562) GPS: Response: 76
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014340.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014340.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014340.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014340.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014340.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014341.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014341.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6682) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014341.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014341.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014341.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014341.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014342.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014342.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014342.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014343.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014343.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014343.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014344.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014344.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014344.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014345.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3652) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014345.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014345.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014345.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4572) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014345.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4692) GPS: Response: RMC,014346.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014346.099,,,,,0,0,,,M,,M,,*4C
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014346.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014346.099,,,,,0,0,,,M,,M,,*4C
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014346.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014346.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014347.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5572) GPS: Response: 7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014347.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014347.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014347.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014347.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014347.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014348.099,V,,,,,0.00,0.00,060180,,,N,V*32
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6572) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014348.099,V,,,,,0.00,0.00,060180,,,N,V*32
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014348.099,,,,,0,0,,,M,,M,,*42
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014348.099,,,,,0,0,,,M,,M,,*42
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6812) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6862) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014348.099,V,N*70
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6862) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014348.099,V,N*70
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6982) GPS: GPS module is not working[0m
+[0;31mE (6982) GPS: GPS module is not working[0m
+[0;31mE (6982) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3542) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014349.099,V,,,,,0.00,0.00,060180,,,N,V*33
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014349.099,,,,,0,0,,,M,,M,,*43
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014349.099,V,N*71
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014350.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014350.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014350.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014351.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014351.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014351.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014352.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3632) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3672) GPS: Response: ,K,N*32
+$GPGGA,014352.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3672) GPS: Response: ,K,N*32
+$GPGGA,014352.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4542) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014352.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4552) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014352.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4672) GPS: Response: RMC,014353.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014353.099,,,,,0,0,,,M,,M,,*48
+$GP[0m
+[0;32mI (4672) GPS: Response: RMC,014353.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014353.099,,,,,0,0,,,M,,M,,*48
+$GP[0m
+[0;32mI (4792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4792) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014353.099,V,N*[0m
+[0;32mI (4792) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014353.099,V,N*[0m
+[0;32mI (4912) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5542) GPS: Response: 7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014354.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5552) GPS: Response: 7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014354.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5672) GPS: Response: 180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014354.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5672) GPS: Response: 180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014354.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5792) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014354.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5792) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014354.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5912) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6542) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014355.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6552) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014355.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6662) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6672) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014355.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6672) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014355.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6792) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6832) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014355.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6832) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014355.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6952) GPS: GPS module is not working[0m
+[0;31mE (6952) GPS: GPS module is not working[0m
+[0;31mE (6952) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014356.099,V,,,,,0.00,0.00,060180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014356.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014356.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014357.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014357.099,,,,,0,0,,,M,,M,,*4C
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014357.099,V,N*7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014358.099,V,,,,,0.00,0.00,060180,,,N,V*33
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014358.099,,,,,0,0,,,M,,M,,*43
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014358.099,V,N*71
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014359.099,V,,,,,0.00,0.00,060180,,,N,V*32
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3642) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3682) GPS: Response: ,K,N*32
+$GPGGA,014359.099,,,,,0,0,,,M,,M,,*42
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014359.099,,,,,0,0,,,M,,M,,*42
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014359.099,V,N*70
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014359.099,V,N*70
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4672) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4682) GPS: Response: RMC,014400.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014400.099,,,,,0,0,,,M,,M,,*49
+$GP[0m
+[0;32mI (4682) GPS: Response: RMC,014400.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014400.099,,,,,0,0,,,M,,M,,*49
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014400.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014400.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014401.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5562) GPS: Response: 7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014401.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5672) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5682) GPS: Response: 180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014401.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5682) GPS: Response: 180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014401.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014401.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014401.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014402.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014402.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6672) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6682) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014402.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6682) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014402.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6842) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014402.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014402.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014403.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014403.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014403.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014404.099,V,,,,,0.00,0.00,060180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014404.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014404.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014405.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014405.099,,,,,0,0,,,M,,M,,*4C
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014405.099,V,N*7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014406.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3642) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3682) GPS: Response: ,K,N*32
+$GPGGA,014406.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014406.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014406.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014406.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4682) GPS: Response: RMC,014407.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014407.099,,,,,0,0,,,M,,M,,*4E
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014407.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014407.099,,,,,0,0,,,M,,M,,*4E
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014407.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014407.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014408.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5562) GPS: Response: 7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014408.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5682) GPS: Response: 180,,,N,V*31
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014408.099,,,,,0,0,,,M,,M,,*41
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*31
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014408.099,,,,,0,0,,,M,,M,,*41
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014408.099,V,N*73
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014408.099,V,N*73
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014409.099,V,,,,,0.00,0.00,060180,,,N,V*30
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014409.099,V,,,,,0.00,0.00,060180,,,N,V*30
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6682) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014409.099,,,,,0,0,,,M,,M,,*40
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014409.099,,,,,0,0,,,M,,M,,*40
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6842) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014409.099,V,N*72
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014409.099,V,N*72
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014410.099,V,,,,,0.00,0.00,060180,,,N,V*38
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014410.099,,,,,0,0,,,M,,M,,*48
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014410.099,V,N*7A
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014411.099,V,,,,,0.00,0.00,060180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014411.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014411.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014412.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014412.099,,,,,0,0,,,M,,M,,*4A
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014412.099,V,N*78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014413.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3642) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014413.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014413.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014413.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014413.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4692) GPS: Response: RMC,014414.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014414.099,,,,,0,0,,,M,,M,,*4C
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014414.099,V,,,,,0.00,0.00,060180,,,N,V*3C
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014414.099,,,,,0,0,,,M,,M,,*4C
+$GP[0m
+[0;32mI (4802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014414.099,V,N*[0m
+[0;32mI (4802) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014414.099,V,N*[0m
+[0;32mI (4922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014415.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5562) GPS: Response: 7E
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014415.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014415.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*3D
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014415.099,,,,,0,0,,,M,,M,,*4D
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014415.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5802) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014415.099,V,N*7F
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5922) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014416.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6562) GPS: Response: *2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014416.099,V,,,,,0.00,0.00,060180,,,N,V*3E
+$GPVTG,0.00,T,,M,0.0[0m
+[0;32mI (6682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014416.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6692) GPS: Response: 0,N,0.00,K,N*32
+$GPGGA,014416.099,,,,,0,0,,,M,,M,,*4E
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,[0m
+[0;32mI (6802) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014416.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6852) GPS: Response: 1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014416.099,V,N*7C
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3[0m
+[0;32mI (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) GPS: GPS module is not working[0m
+[0;31mE (6962) FreeRTOS: FreeRTOS Task "task_gps" should not return, Aborting now![0m
+
+abort() was called at PC 0x40088b27 on core 0
+
+
+Backtrace: 0x40081812:0x3ffb6120 0x40086529:0x3ffb6140 0x4008ba1e:0x3ffb6160 0x40088b27:0x3ffb61d0
+
+
+
+
+ELF file SHA256: ffd38c2784cd90a1
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 20:28:57[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aa30h ( 43568) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aa58 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cbb8 vaddr=40080000 size=03460h ( 13408) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16a30h ( 92720) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036a58 vaddr=40083460 size=09a78h ( 39544) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     gps[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug  7 2024 20:28:03[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  ffd38c2784cd90a1...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) GPS: Iniciando configuração da UART[0m
+[0;32mI (342) GPS: Configuração da UART concluída[0m
+[0;32mI (352) GPS: Entrando no LOOP principal[0m
+[0;32mI (352) GPS: Sending command: $PMTK225,0*2B
+[0m
+[0;32mI (362) main_task: Returned from app_main()[0m
+[0;32mI (3562) GPS: Response: $PMTK011,MTKGPS*08
+$PMTK010,003*2C
+$PMTK001,225,3*35
+$GPRMC,014417.099,V,,,,,0.00,0.00,060180,,,N,V*3F
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014417.099,,,,,0,0,,,M,,M,,*4F
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014417.099,V,N*7D
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014418.099,V,,,,,0.00,0.00,060180,,,N,V*30
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014418.099,,,,,0,0,,,M,,M,,*40
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014418.099,V,N*72
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014419.099,V,,,,,0.00,0.00,060180,,,N,V*31
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014419.099,,,,,0,0,,,M,,M,,*41
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014419.099,V,N*73
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$GPRMC,014420.099,V,,,,,0.00,0.00,060180,,,N,V*3B
+$GPVTG,0.00,T,,M,0.00,N,0.00[0m
+[0;32mI (3652) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014420.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3692) GPS: Response: ,K,N*32
+$GPGGA,014420.099,,,,,0,0,,,M,,M,,*4B
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0[0m
+[0;32mI (3812) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4562) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014420.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4572) GPS: Response: *65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014420.099,V,N*79
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GP[0m
+[0;32mI (4682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4692) GPS: Response: RMC,014421.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014421.099,,,,,0,0,,,M,,M,,*4A
+$GP[0m
+[0;32mI (4692) GPS: Response: RMC,014421.099,V,,,,,0.00,0.00,060180,,,N,V*3A
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014421.099,,,,,0,0,,,M,,M,,*4A
+$GP[0m
+[0;32mI (4812) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (4812) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014421.099,V,N*[0m
+[0;32mI (4812) GPS: Response: GSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGSA,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014421.099,V,N*[0m
+[0;32mI (4932) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5562) GPS: Response: 78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014422.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5572) GPS: Response: 78
+$GPTXT,01,01,02,ANTSTATUS=OPEN*2B
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$PMTK001,0,3*30
+$GPRMC,014422.099,V,,,,,0.00,0.00,060[0m
+[0;32mI (5682) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014422.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5692) GPS: Response: 180,,,N,V*39
+$GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
+$GPGGA,014422.099,,,,,0,0,,,M,,M,,*49
+$GPGSA,A,1,,,,,,,,,,,,,,,,1*03
+$GPGS[0m
+[0;32mI (5812) GPS: Sending command: $PMTK000*32
+[0m
+[0;32mI (5812) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014422.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5812) GPS: Response: A,A,1,,,,,,,,,,,,,,,,2*00
+$GPGSV,1,1,00,0*65
+$GLGSV,1,1,00,1*78
+$GPGLL,,,,,014422.099,V,N*7B
+$GPTXT,01,01,02,ANTSTATUS=OPEN[0m
+[0;32mI (5932) GPS: Sending command: $PMTK000*32
+[0m
